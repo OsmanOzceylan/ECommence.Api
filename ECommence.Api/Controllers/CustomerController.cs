@@ -14,7 +14,7 @@ namespace ECommence.Api.Controllers
         {
 
         }
-
+         
         [HttpGet]
         public IActionResult GetAll()
         {
