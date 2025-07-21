@@ -7,7 +7,7 @@ namespace ECommence.Api.Controllers
     [Route("api/[controller]")]
     public class CustomersController : ControllerBase
     {
-        private readonly ICustomerRepository;
+    
 
 
             public CustomersController()
