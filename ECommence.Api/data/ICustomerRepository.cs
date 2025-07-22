@@ -7,5 +7,12 @@ namespace ECommence.Api.Abstract
     {
         void AddCustomer(Customer customer);
         List<Customer> GetCustomers();
+        void UpdateCustomer(Customer customer);
+
+
+
+
+
+
     }
 }

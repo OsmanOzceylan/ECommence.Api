@@ -31,5 +31,17 @@ namespace ECommence.Api.Controllers
             _customerService.AddCustomer(newCustomer);
             return CreatedAtAction(nameof(GetAll), null, newCustomer);
         }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateCustomer(string id, [FromBody] Customer updatedCustomer)
+        {
+            if (updatedCustomer == null || id != updatedCustomer.CustomerID)
+                return BadRequest("Customer ID mismatch.");
+
+            _customerService.UpdateCustomer(updatedCustomer);
+            return NoContent();  
+        }
+
+
     }
 }

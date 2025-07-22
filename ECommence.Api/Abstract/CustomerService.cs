@@ -22,5 +22,10 @@ namespace ECommence.Api.Abstract
         {
             return _customerRepository.GetCustomers();
         }
+
+        public void UpdateCustomer(Customer customer)
+        { 
+            _customerRepository.UpdateCustomer(customer);
+        }
     }
 }
