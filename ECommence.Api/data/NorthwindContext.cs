@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ECommence.Api;
+using ECommence.Api.Models;
 
 namespace ECommence.Api.Data
 {

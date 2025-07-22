@@ -1,7 +1,11 @@
+
 using ECommence.Api.Data;
 using Microsoft.EntityFrameworkCore;
+using static ECommence.Api.Data.CustomerRepository;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddScoped<ECommence.Api.Abstract.ICustomerRepository, ECommence.Api.Data.CustomerRepository>();
+builder.Services.AddScoped<ECommence.Api.Abstract.ICustomerService, ECommence.Api.Abstract.CustomerService>();
 
 // Add services to the container.
 
